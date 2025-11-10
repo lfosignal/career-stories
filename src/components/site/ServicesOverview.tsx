@@ -16,10 +16,10 @@ export function ServicesOverview() {
             className="rounded-[1.8rem] border border-border/60 bg-white/75 p-7 shadow-[0_28px_70px_rgba(51,147,255,0.14)] backdrop-blur"
           >
             <h3 className="text-lg font-semibold text-foreground">{item.title}</h3>
-            <ul className="mt-4 space-y-3 text-sm leading-relaxed text-muted-foreground">
+            <ul className="mt-4 space-y-2.5 text-sm leading-relaxed text-muted-foreground">
               {item.bullets.map((b) => (
-                <li key={b} className="flex items-start gap-2">
-                  <CheckCircle className="mt-0.5 size-4 text-accent" />
+                <li key={b} className="flex items-start gap-2.5">
+                  <CheckCircle className="mt-0.5 size-3 text-muted-foreground" />
                   <span>{b}</span>
                 </li>
               ))}

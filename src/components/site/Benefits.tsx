@@ -60,7 +60,7 @@ export function Benefits() {
               </div>
             </div>
           ))}
-          <div className="relative overflow-hidden rounded-[2.3rem] border border-primary/40 bg-primary/12 p-9 text-foreground backdrop-blur">
+          <div className="relative overflow-hidden rounded-[2.4rem] border border-primary/40 bg-primary/12 p-9 text-foreground backdrop-blur">
             <div className="absolute -top-16 -right-10 h-40 w-40 rounded-full bg-primary/28 blur-3xl" />
             <div className="absolute -bottom-16 left-4 h-52 w-52 rounded-full bg-accent/30 blur-3xl" />
             <div className="relative flex h-full flex-col justify-between gap-6">

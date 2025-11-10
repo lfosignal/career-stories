@@ -58,7 +58,7 @@
   --secondary-foreground: var(--color-midnight-blue);
   --muted: rgba(62, 109, 176, 0.08);
   --muted-foreground: rgba(63, 63, 63, 0.72);
-  --accent: var(--color-cornflower-blue);
+  --accent: var(--color-steel-blue);
   --accent-foreground: var(--color-white);
   --destructive: #e04b3a;
   --border: rgba(62, 109, 176, 0.18);
