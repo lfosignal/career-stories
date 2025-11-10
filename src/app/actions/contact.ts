@@ -1,6 +1,6 @@
-\"use server\"
+'use server'
 
-import { Resend } from \"resend\"
+import { Resend } from "resend"
 
 type ContactPayload = {
   name: string
@@ -14,10 +14,10 @@ export async function submitContact(payload: ContactPayload): Promise<boolean> {
   try {
     const apiKey = process.env.RESEND_API_KEY
     const to = process.env.CONTACT_TO
-    const from = process.env.CONTACT_FROM || \"no-reply@career-stories.local\"
+    const from = process.env.CONTACT_FROM || "no-reply@career-stories.local"
 
     if (!apiKey || !to) {
-      console.log(\"[contact] received:\", payload)
+      console.log("[contact] received:", payload)
       return true
     }
 
@@ -26,10 +26,10 @@ export async function submitContact(payload: ContactPayload): Promise<boolean> {
     const text = [
       `Имя: ${payload.name}`,
       `Email: ${payload.email}`,
-      `Телефон: ${payload.phone || \"—\"}`,
-      ``,
+      `Телефон: ${payload.phone || "—"}`,
+      "",
       payload.message,
-    ].join(\"\\n\")
+    ].join("\n")
 
     const { error } = await resend.emails.send({
       from,
@@ -38,12 +38,12 @@ export async function submitContact(payload: ContactPayload): Promise<boolean> {
       text,
     })
     if (error) {
-      console.error(\"[contact] email error:\", error)
+      console.error("[contact] email error:", error)
       return false
     }
     return true
   } catch (e) {
-    console.error(\"[contact] unexpected error:\", e)
+    console.error("[contact] unexpected error:", e)
     return false
   }
 }
