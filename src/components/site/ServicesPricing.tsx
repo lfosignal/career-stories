@@ -40,7 +40,7 @@ export function ServicesPricing() {
                 <CardContent className="space-y-3 px-10 pb-10 pt-8 text-sm leading-relaxed text-muted-foreground">
                   {plan.features.map((f) => (
                     <div key={f} className="flex items-start gap-3">
-                      <Check className="mt-1 size-4 text-accent" />
+                      <Check className="mt-1 h-4 w-4 shrink-0 text-accent" />
                       <p>{f}</p>
                     </div>
                   ))}
