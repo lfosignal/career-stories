@@ -28,12 +28,11 @@
 
 ### Социальные сети и мессенджеры
 - **Telegram:** https://t.me/your_telegram_username
-- **WhatsApp:** +7 (950) 123-45-67 (https://wa.me/79501234567)
+- **WhatsApp:** +7 (921) 974-27-31 (https://wa.me/79501234567)
 - **Instagram:** https://instagram.com/your_instagram_username
 
 ### Контакты для футера
-- **Телефон:** +7 (495) 123-45-67
-- **Email:** alexandra@karera-pro.ru
+- **Email:** bojkotik@gmail.com
 
 ---
 

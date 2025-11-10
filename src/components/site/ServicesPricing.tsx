@@ -1,68 +1,62 @@
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Check } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { siteContent } from "@/content/site"
 
-type Plan = {
-  name: string
-  price: string
-  features: string[]
-  cta?: string
-}
-
-const plans: Plan[] = [
-  {
-    name: "Базовый",
-    price: "5 900 ₽",
-    features: ["1 консультация 60 мин", "Аудит резюме/LinkedIn", "Рекомендации по улучшению"],
-    cta: "Записаться",
-  },
-  {
-    name: "Оптимальный",
-    price: "15 900 ₽",
-    features: ["3 сессии по 60 мин", "План поиска работы", "Мока-интервью"],
-    cta: "Выбрать",
-  },
-  {
-    name: "Премиум",
-    price: "29 900 ₽",
-    features: ["6 сессий по 60 мин", "Стратегия перехода/роста", "Сопровождение 30 дней"],
-    cta: "Начать",
-  },
-]
-
 export function ServicesPricing() {
   return (
-    <section className="container mx-auto max-w-6xl px-6 py-16" id="services">
-      <h2 className="mb-8 text-2xl font-semibold tracking-tight">Услуги и программы</h2>
-      <div className="grid gap-6 md:grid-cols-3">
-        {siteContent.plans.map((plan) => {
-          const featured = Boolean((plan as any).featured)
-          return (
-          <Card key={plan.name} className={`flex flex-col ${featured ? "ring-1 ring-primary/30 shadow-[0_10px_40px_-12px_rgba(16,185,129,.45)]" : ""}`}>
-            <CardHeader className="space-y-2">
-              <div className="flex items-center justify-between">
-                <CardTitle>{plan.name}</CardTitle>
-                {featured && <Badge>Популярно</Badge>}
-              </div>
-              <div className="text-3xl font-semibold">{plan.price}</div>
-            </CardHeader>
-            <CardContent className="space-y-2">
-              {plan.features.map((f) => (
-                <div key={f} className="flex items-start gap-2">
-                  <Check className="mt-0.5 size-4 text-primary" />
-                  <p>{f}</p>
-                </div>
-              ))}
-            </CardContent>
-            <CardFooter className="mt-auto">
-              <Button className="w-full" asChild>
-                <a href="#contact">{plan.cta ?? "Оставить заявку"}</a>
-              </Button>
-            </CardFooter>
-          </Card>
-        )})}
+    <section className="relative py-28" id="services">
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/0 via-white/35 to-white/0" />
+      <div className="relative mx-auto max-w-[var(--page-max-width)] px-[var(--page-padding)]">
+        <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <div className="space-y-4">
+            <span className="text-[11px] uppercase tracking-[0.42em] text-muted-foreground/80">
+              Программы под вашу цель
+            </span>
+            <h2 className="text-4xl font-semibold text-foreground md:text-5xl">
+              Услуги и программы
+            </h2>
+          </div>
+          <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
+            Выберите формат поддержи: от экспресс-диагностики до полного сопровождения с фокусом на результат.
+          </p>
+        </div>
+        <div className="mt-14 grid gap-8 md:grid-cols-3">
+          {siteContent.plans.map((plan) => {
+            const featured = Boolean(plan.featured)
+            return (
+              <Card
+                key={plan.name}
+                className={`relative flex h-full flex-col overflow-hidden rounded-[2.4rem] border border-border/60 bg-white/80 p-0 backdrop-blur transition duration-500 hover:-translate-y-1 hover:shadow-[0_44px_120px_rgba(51,147,255,0.22)] ${featured ? "border-primary/45 shadow-[0_38px_120px_rgba(251,65,31,0.28)]" : ""}`}
+              >
+                {featured && (
+                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary via-[#ff6a44] to-accent" />
+                )}
+                <CardHeader className="space-y-4 px-10 pt-12 pb-0">
+                  <div className="flex items-center justify-between text-sm uppercase tracking-[0.32em] text-muted-foreground/70">
+                    <span>{plan.name}</span>
+                    {featured && <Badge className="rounded-full bg-primary/15 text-primary">Популярно</Badge>}
+                  </div>
+                  <div className="text-4xl font-semibold text-foreground">{plan.price}</div>
+                </CardHeader>
+                <CardContent className="space-y-3 px-10 pb-10 pt-8 text-sm leading-relaxed text-muted-foreground">
+                  {plan.features.map((f) => (
+                    <div key={f} className="flex items-start gap-3">
+                      <Check className="mt-1 size-4 text-accent" />
+                      <p>{f}</p>
+                    </div>
+                  ))}
+                </CardContent>
+                <CardFooter className="mt-auto px-10 pb-10 pt-0">
+                  <Button className="w-full" variant={featured ? "default" : "secondary"} asChild>
+                    <a href="#contact">{plan.cta ?? "Оставить заявку"}</a>
+                  </Button>
+                </CardFooter>
+              </Card>
+            )
+          })}
+        </div>
       </div>
     </section>
   )

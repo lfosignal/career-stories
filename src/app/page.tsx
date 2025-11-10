@@ -10,6 +10,7 @@ import { CTASection } from "@/components/site/CTASection"
 import { ServicesOverview } from "@/components/site/ServicesOverview"
 import { Cases } from "@/components/site/Cases"
 import { SectionDivider } from "@/components/site/SectionDivider"
+import { LogoMarquee } from "@/components/site/LogoMarquee"
 import { siteContent } from "@/content/site"
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Hero />
+      <LogoMarquee />
       <About />
       <SectionDivider />
       <ProblemSolution />
