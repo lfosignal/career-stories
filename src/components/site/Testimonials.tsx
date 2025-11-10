@@ -26,11 +26,11 @@ export function Testimonials() {
           </p>
         </div>
       </div>
-      <div className="overflow-hidden" ref={viewportRef}>
-        <div className="-ml-4 flex">
+      <div className="mt-6 overflow-hidden px-[var(--page-padding)] pb-6" ref={viewportRef}>
+        <div className="flex gap-4">
           {testimonials.map((t, i) => (
-            <div key={i} className="min-w-0 flex-[0_0_100%] pl-4 md:flex-[0_0_50%]">
-              <Card className="relative h-full rounded-[2.1rem] border border-border/60 bg-white/80 backdrop-blur shadow-[0_32px_88px_rgba(51,147,255,0.16)]">
+            <div key={i} className="min-w-0 flex-[0_0_92%] pl-0 sm:flex-[0_0_70%] md:flex-[0_0_48%]">
+              <Card className="relative h-full max-w-[520px] rounded-[2.1rem] border border-border/60 bg-white/80 backdrop-blur shadow-[0_32px_88px_rgба(51,147,255,0.16)]">
                 <CardContent className="space-y-5 px-9 py-12">
                   <div className="flex items-center gap-1 text-accent">
                     {Array.from({ length: 5 }).map((_, starIndex) => (
