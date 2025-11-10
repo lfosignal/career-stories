@@ -6,8 +6,8 @@ import { siteContent } from "@/content/site"
 
 export function Header() {
   return (
-    <header className="relative z-50 flex justify-center px-4">
-      <div className="sticky top-4 z-40 mt-6 flex w-full max-w-[62rem] items-center justify-between rounded-[44px] border border-white/40 border-b-[#3E6DB0]/15 bg-white/40 px-8 py-4 shadow-[0_30px_80px_rgба(62,109,176,0.14)] backdrop-blur">
+    <header className="sticky top-0 z-50 flex justify-center px-4 pb-4">
+      <div className="mt-4 flex w-full max-w-[62rem] items-center justify-between rounded-[44px] border border-white/40 border-b-[#3E6DB0]/15 bg-white/40 px-8 py-4 shadow-[0_30px_80px_rgба(62,109,176,0.14)] backdrop-blur">
         <Link href="/" className="flex items-center gap-3 text-sm font-semibold text-[#343434]">
           <span className="relative flex size-3 items-center justify-center">
             <span className="absolute inline-flex size-4 rounded-full bg-[#FB411F]/30" />
