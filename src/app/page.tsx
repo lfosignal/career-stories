@@ -3,14 +3,22 @@ import { ProblemSolution } from "@/components/site/ProblemSolution"
 import { ServicesPricing } from "@/components/site/ServicesPricing"
 import { FAQ } from "@/components/site/FAQ"
 import { ContactForm } from "@/components/site/ContactForm"
+import { About } from "@/components/site/About"
+import { Benefits } from "@/components/site/Benefits"
+import { Testimonials } from "@/components/site/Testimonials"
+import { CTASection } from "@/components/site/CTASection"
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Hero />
+      <About />
       <ProblemSolution />
+      <Benefits />
       <ServicesPricing />
+      <Testimonials />
       <FAQ />
+      <CTASection />
       <ContactForm />
     </div>
   )
