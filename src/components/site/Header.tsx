@@ -6,32 +6,32 @@ import { siteContent } from "@/content/site"
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/75 backdrop-blur-xl">
-      <div className="mx-auto flex h-16 max-w-[var(--page-max-width)] items-center justify-between px-[var(--page-padding)]">
-        <Link href="/" className="flex items-center gap-3 text-sm font-semibold text-muted-foreground">
-          <span className="relative flex size-2 items-center justify-center">
-            <span className="absolute inline-flex size-3 rounded-full bg-primary/30" />
-            <span className="relative inline-flex size-1.5 rounded-full bg-primary shadow-[0_0_0_4px_rgba(251,65,31,0.18)]" />
+    <header className="relative z-50 flex justify-center px-4">
+      <div className="mt-6 flex w-full max-w-[62rem] items-center justify-between rounded-[44px] border border-white/40 border-b-[#3E6DB0]/15 bg-white/40 px-8 py-4 shadow-[0_30px_80px_rgба(62,109,176,0.14)] backdrop-blur">
+        <Link href="/" className="flex items-center gap-3 text-sm font-semibold text-[#343434]">
+          <span className="relative flex size-3 items-center justify-center">
+            <span className="absolute inline-flex size-4 rounded-full bg-[#FB411F]/30" />
+            <span className="relative inline-flex size-2 rounded-full bg-[#FB411F] shadow-[0_0_0_6px_rgба(251,65,31,0.18)]" />
           </span>
           {siteContent.brand.name}
         </Link>
-        <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
-          <a href="#about" className="text-muted-foreground transition hover:text-foreground">
+        <nav className="hidden items-center gap-6 text-[14px] font-medium text-[#3C3C3C] md:flex">
+          <a href="#about" className="transition hover:text-black">
             Обо мне
           </a>
-          <a href="#problems" className="text-muted-foreground transition hover:text-foreground">
+          <a href="#problems" className="transition hover:text-black">
             Проблемы
           </a>
-          <a href="#services" className="text-muted-foreground transition hover:text-foreground">
+          <a href="#services" className="transition hover:text-black">
             Услуги
           </a>
-          <a href="#testimonials" className="text-muted-foreground transition hover:text-foreground">
+          <a href="#testimonials" className="transition hover:text-black">
             Отзывы
           </a>
-          <a href="#faq" className="text-muted-foreground transition hover:text-foreground">
+          <a href="#faq" className="transition hover:text-black">
             FAQ
           </a>
-          <a href="#contact" className="text-muted-foreground transition hover:text-foreground">
+          <a href="#contact" className="transition hover:text-black">
             Контакты
           </a>
         </nav>
@@ -54,9 +54,9 @@ export function Header() {
             </SheetContent>
           </Sheet>
         </div>
-        <span className="ml-4 hidden md:inline-flex">
-          <Button asChild size="sm">
-            <a href="#contact">Бесплатная консультация</a>
+        <span className="hidden md:inline-flex">
+          <Button size="sm" className="bg-white/30 text-[#343434]">
+            Связаться
           </Button>
         </span>
       </div>
