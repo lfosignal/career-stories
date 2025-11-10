@@ -11,7 +11,7 @@ export function ServicesPricing() {
       <div className="relative mx-auto max-w-[var(--page-max-width)] px-[var(--page-padding)]">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="space-y-4">
-            <span className="text-[11px] uppercase tracking-[0.42em] text-muted-foreground/80">
+            <span className="text-sm text-muted-foreground/80">
               Программы под вашу цель
             </span>
             <h2 className="text-4xl font-semibold text-foreground md:text-5xl">
@@ -28,11 +28,8 @@ export function ServicesPricing() {
             return (
               <Card
                 key={plan.name}
-                className={`relative flex h-full flex-col overflow-hidden rounded-[2.4rem] border border-border/60 bg-white/80 p-0 backdrop-blur transition duration-500 hover:-translate-y-1 hover:shadow-[0_44px_120px_rgba(51,147,255,0.22)] ${featured ? "border-primary/45 shadow-[0_38px_120px_rgba(251,65,31,0.28)]" : ""}`}
+                className={`relative flex h-full flex-col overflow-hidden rounded-[2.4rem] border border-border/60 bg-white/80 p-0 backdrop-blur transition duration-500 hover:-translate-y-1 hover:shadow-[0_44px_120px_rgба(51,147,255,0.22)] ${featured ? "border-primary/45 shadow-[0_38px_120px_rgба(251,65,31,0.28)]" : ""}`}
               >
-                {featured && (
-                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary via-[#ff6a44] to-accent" />
-                )}
                 <CardHeader className="space-y-4 px-10 pt-12 pb-0">
                   <div className="flex items-center justify-between text-sm text-muted-foreground/70">
                     <span>{plan.name}</span>
@@ -50,7 +47,7 @@ export function ServicesPricing() {
                 </CardContent>
                 <CardFooter className="mt-auto px-10 pb-10 pt-0">
                   <Button className="w-full" variant={featured ? "default" : "secondary"} asChild>
-                    <a href="#contact">{plan.cta ?? "Оставить заявку"}</a>
+                    <a href="#contact">Записаться</a>
                   </Button>
                 </CardFooter>
               </Card>
