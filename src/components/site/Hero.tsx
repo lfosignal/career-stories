@@ -12,7 +12,14 @@ export function Hero({ onPrimaryCtaClick }: HeroProps) {
 
   return (
     <section className="relative overflow-hidden pb-20 pt-24">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-white via-white/70 to-white/40" />
+      <Image
+        src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1920&q=80"
+        alt="Команда за совместной работой"
+        fill
+        className="-z-20 object-cover"
+        priority
+      />
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-white/92 via-white/88 to-white/80" />
       <div className="relative mx-auto max-w-[var(--page-max-width)] px-[var(--page-padding)]">
         <div className="grid items-center gap-14 lg:grid-cols-[1fr_0.9fr]">
           <div className="space-y-8">
@@ -21,9 +28,9 @@ export function Hero({ onPrimaryCtaClick }: HeroProps) {
               Карьерное консультирование
             </div>
             <div className="space-y-4">
-              <h1 className="text-balance text-4xl font-semibold leading-tight text-foreground md:text-6xl">
+              <h1 className="text-balance text-3xl font-semibold leading-tight text-foreground md:text-5xl">
                 {titleMain}
-                <span className="block text-foreground/80">
+                <span className="block font-normal text-foreground/85">
                   {titleAccent?.trim() ?? accentFallback}
                 </span>
               </h1>
