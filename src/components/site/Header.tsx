@@ -15,7 +15,7 @@ export function Header() {
           </span>
           {siteContent.brand.name}
         </Link>
-        <nav className="hidden items-center gap-6 text-[11px] font-medium uppercase tracking-[0.32em] md:flex">
+        <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
           <a href="#about" className="text-muted-foreground transition hover:text-foreground">
             Обо мне
           </a>
