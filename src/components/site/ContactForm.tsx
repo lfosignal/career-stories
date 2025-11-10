@@ -9,6 +9,8 @@ import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { toast } from "sonner"
 import { submitContact } from "@/app/actions/contact"
+import { Checkbox } from "@/components/ui/checkbox"
+import { Loader2 } from "lucide-react"
 
 const schema = z.object({
   name: z.string().min(2, "Минимум 2 символа"),
@@ -63,8 +65,28 @@ export function ContactForm() {
           <Textarea id="message" placeholder="Кратко опишите ваш запрос" rows={5} {...form.register("message")} />
           {form.formState.errors.message && <p className="text-sm text-destructive">{form.formState.errors.message.message}</p>}
         </div>
-        <Button type="submit" disabled={isSubmitting}>{isSubmitting ? "Отправка…" : "Отправить"}</Button>
+        <div className="flex items-center gap-2">
+          <Checkbox id="consent" required />
+          <label htmlFor="consent" className="text-sm text-muted-foreground">
+            Я согласен(а) с обработкой персональных данных
+          </label>
+        </div>
+        <Button type="submit" disabled={isSubmitting}>
+          {isSubmitting && <Loader2 className="mr-2 size-4 animate-spin" />}
+          {isSubmitting ? "Отправка…" : "Отправить"}
+        </Button>
       </form>
+      <div className="mt-8 grid gap-3 rounded-lg border p-4 text-sm">
+        <div className="text-muted-foreground">Быстрые способы связи:</div>
+        <div className="flex flex-wrap gap-3">
+          <Button variant="outline" asChild>
+            <a href="https://cal.com" target="_blank" rel="noreferrer">Запись в календаре</a>
+          </Button>
+          <Button variant="outline" asChild>
+            <a href="https://t.me" target="_blank" rel="noreferrer">Написать в Telegram</a>
+          </Button>
+        </div>
+      </div>
     </section>
   )
 }
