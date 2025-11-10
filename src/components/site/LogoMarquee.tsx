@@ -24,7 +24,7 @@ export function LogoMarquee() {
         {rows.map((index) => (
           <div key={index} className="flex overflow-hidden">
             <div
-              className="flex min-w-full shrink-0 items-center justify-around gap-10 whitespace-nowrap pr-10 text-muted-foreground/80 [animation:marquee_28s_linear_infinite]
+              className="group flex min-w-full shrink-0 items-center justify-around gap-10 whitespace-nowrap pr-10 text-muted-foreground/80 [animation:marquee_28s_linear_infinite] hover:[animation-play-state:paused] focus-within:[animation-play-state:paused]
               [&>*]:flex [&>*]:w-max [&>*]:flex-col [&>*]:items-start [&>*]:gap-1"
               style={{ animationDelay: index === 1 ? "-14s" : undefined }}
             >

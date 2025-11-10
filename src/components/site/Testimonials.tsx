@@ -40,7 +40,7 @@ export function Testimonials() {
                   <p className="text-base leading-relaxed text-muted-foreground">{t.text}</p>
                   <div className="flex items-center gap-4">
                     <Avatar className="size-10">
-                      <AvatarImage src={t.avatar} />
+                      <AvatarImage src={t.avatar} loading="lazy" decoding="async" />
                       <AvatarFallback>★</AvatarFallback>
                     </Avatar>
                     <div className="text-sm text-muted-foreground">

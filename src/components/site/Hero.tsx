@@ -14,7 +14,7 @@ export function Hero({ onPrimaryCtaClick }: HeroProps) {
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-white via-white/60 to-white/20" />
         <div className="absolute -top-40 left-1/5 h-80 w-80 rounded-full bg-primary/15 blur-3xl" />
-        <div className="absolute -bottom-36 right-[12%] h-96 w-96 rounded-full bg-accent/18 blur-[140px]" />
+        <div className="absolute -bottom-36 right-[12%] h-96 w-96 rounded-full bg-accent/18 blur-[100px]" />
       </div>
       <div className="relative mx-auto max-w-[var(--page-max-width)] px-[var(--page-padding)]">
         <div className="grid items-center gap-16 lg:grid-cols-[1.15fr_0.85fr]">

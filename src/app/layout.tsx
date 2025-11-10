@@ -39,6 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
+      <head>
+        <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
+      </head>
       <body
         className={`${inter.variable} ${notoSerif.variable} ${robotoMono.variable} antialiased`}
       >
