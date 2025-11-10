@@ -1,18 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Check } from "lucide-react"
+import { siteContent } from "@/content/site"
 
 export function ProblemSolution() {
   const problems = [
-    "Неудовлетворенность работой, стагнация",
-    "Сложности с поиском работы и собеседованиями",
-    "Выгорание, отсутствие ясности и фокуса",
-    "Хочу сменить профессию, но не знаю как",
+    ...siteContent.problems,
   ]
   const solutions = [
-    "Диагностика, профиль сильных сторон и сценарии роста",
-    "Стратегия поиска, резюме/LinkedIn, подготовка к интервью",
-    "Практики энергоменеджмента и ресурсной карьеры",
-    "План перехода: обучение, портфолио, мостовые роли",
+    ...siteContent.solutions,
   ]
   return (
     <section className="container mx-auto max-w-6xl px-6 py-16" id="problems">

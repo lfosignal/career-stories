@@ -2,11 +2,10 @@
 
 import useEmblaCarousel from "embla-carousel-react"
 import { Card, CardContent } from "@/components/ui/card"
+import { siteContent } from "@/content/site"
 
 const testimonials = [
-  { name: "Анна, продуктовый дизайнер", text: "За 2 месяца перешла из смежной роли в дизайн. Получила оффер, собеседования перестали быть стрессом." },
-  { name: "Игорь, разработчик", text: "Переписали резюме и LinkedIn, отладили стратегию. Через 6 недель — новый оффер с ростом дохода на 35%." },
-  { name: "Мария, маркетолог", text: "Наконец-то появилось направление и план. Сняли тревогу, вернулась энергия. Спасибо за бережный формат." },
+  ...siteContent.testimonials,
 ]
 
 export function Testimonials() {

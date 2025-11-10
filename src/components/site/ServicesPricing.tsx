@@ -2,6 +2,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Button } from "@/components/ui/button"
 import { Check } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
+import { siteContent } from "@/content/site"
 
 type Plan = {
   name: string
@@ -36,8 +37,8 @@ export function ServicesPricing() {
     <section className="container mx-auto max-w-6xl px-6 py-16" id="services">
       <h2 className="mb-8 text-2xl font-semibold tracking-tight">Услуги и программы</h2>
       <div className="grid gap-6 md:grid-cols-3">
-        {plans.map((plan) => {
-          const featured = plan.name === "Оптимальный"
+        {siteContent.plans.map((plan) => {
+          const featured = Boolean((plan as any).featured)
           return (
           <Card key={plan.name} className={`flex flex-col ${featured ? "ring-1 ring-primary/30 shadow-[0_10px_40px_-12px_rgba(16,185,129,.45)]" : ""}`}>
             <CardHeader className="space-y-2">
