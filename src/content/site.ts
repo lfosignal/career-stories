@@ -175,6 +175,34 @@ export const siteContent = {
         "Преодолел выгорание и вышел на директорскую позицию, которую люблю.",
       avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a",
     },
+    {
+      name: "Анна Смирнова",
+      role: "Продуктовый аналитик",
+      text:
+        "Выросла до middle за квартал: выстроили фокус развития и roadmap мягких навыков.",
+      avatar: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39",
+    },
+    {
+      name: "Илья Кузнецов",
+      role: "Data engineer",
+      text:
+        "Получил оффер в Европе: помогла подготовка к тех-интервью и стратегия релокации.",
+      avatar: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+    },
+    {
+      name: "Наталия Орлова",
+      role: "HR business partner",
+      text:
+        "Наконец-то вышла на рынок после декрета — собрали сильный personal brand и историю.",
+      avatar: "https://images.unsplash.com/photo-1544723795-43253758bf1d",
+    },
+    {
+      name: "Сергей Михайлов",
+      role: "Project manager",
+      text:
+        "Освоил новый сегмент в финтехе: продуманная стратегия нетворкинга дала оффер за 5 недель.",
+      avatar: "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
+    },
   ],
   faq: [
     {
