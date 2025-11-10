@@ -34,7 +34,7 @@ export function ServicesPricing() {
                   <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary via-[#ff6a44] to-accent" />
                 )}
                 <CardHeader className="space-y-4 px-10 pt-12 pb-0">
-                  <div className="flex items-center justify-between text-sm uppercase tracking-[0.32em] text-muted-foreground/70">
+                  <div className="flex items-center justify-between text-sm text-muted-foreground/70">
                     <span>{plan.name}</span>
                     {featured && <Badge className="rounded-full bg-primary/15 text-primary">Популярно</Badge>}
                   </div>

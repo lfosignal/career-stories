@@ -18,7 +18,7 @@ export function Testimonials() {
       <div className="mx-auto max-w-[var(--page-max-width)] px-[var(--page-padding)]">
         <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div className="space-y-3">
-            <span className="text-[11px] uppercase tracking-[0.42em] text-muted-foreground/80">Голоса клиентов</span>
+            <span className="text-sm text-muted-foreground/80">Голоса клиентов</span>
             <h2 className="text-3xl font-semibold text-foreground md:text-4xl">Реальные результаты</h2>
           </div>
           <p className="max-w-lg text-sm leading-relaxed text-muted-foreground">

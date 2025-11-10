@@ -31,7 +31,7 @@ export function Benefits() {
       <div className="relative mx-auto max-w-[var(--page-max-width)] px-[var(--page-padding)]">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="space-y-3">
-            <p className="text-[11px] uppercase tracking-[0.42em] text-muted-foreground/80">Процесс под ключ</p>
+            <p className="text-sm text-muted-foreground/80">Процесс под ключ</p>
             <h2 className="text-balance text-3xl font-semibold leading-tight text-foreground md:text-4xl">
               Генерируем идеи, шлифуем стратегию, ускоряем выход на новый уровень
             </h2>
@@ -49,13 +49,13 @@ export function Benefits() {
               <div className={`absolute inset-0 -z-10 bg-gradient-to-br ${pillar.tone.replace("transparent", "rgba(255,255,255,0)")} opacity-60 transition duration-500 group-hover:opacity-95`} />
               <div className="flex h-full flex-col gap-8">
                 <div className="space-y-3">
-                  <span className="text-[11px] uppercase tracking-[0.42em] text-muted-foreground/75">{pillar.title}</span>
+                  <span className="text-sm text-muted-foreground/75">{pillar.title}</span>
                   <h3 className="text-2xl font-semibold text-foreground">{pillar.headline}</h3>
                   <p className="text-sm leading-relaxed text-muted-foreground">{pillar.description}</p>
                 </div>
                 <div className="mt-auto text-sm text-muted-foreground/80">
                   <div className="text-4xl font-semibold text-foreground">{pillar.metric.kpi}</div>
-                  <p className="mt-1 text-[11px] uppercase tracking-[0.36em]">{pillar.metric.label}</p>
+                  <p className="mt-1 text-sm">{pillar.metric.label}</p>
                 </div>
               </div>
             </div>
@@ -65,13 +65,13 @@ export function Benefits() {
             <div className="absolute -bottom-16 left-4 h-52 w-52 rounded-full bg-accent/30 blur-3xl" />
             <div className="relative flex h-full flex-col justify-between gap-6">
               <div className="space-y-3">
-                <span className="text-[11px] uppercase tracking-[0.42em] text-foreground/70">Партнёрство</span>
+                <span className="text-sm text-foreground/70">Партнёрство</span>
                 <h3 className="text-2xl font-semibold">Поддержка 360°</h3>
                 <p className="text-sm leading-relaxed text-foreground/80">
                   {siteContent.benefits[3].label}: {siteContent.benefits[3].kpi}. У вас есть наставник, штурм командой и канал связи 24/5.
                 </p>
               </div>
-              <div className="text-[11px] uppercase tracking-[0.36em] text-foreground/60">Без шаблонных решений</div>
+              <div className="text-sm text-foreground/60">Без шаблонных решений</div>
             </div>
           </div>
         </div>

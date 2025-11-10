@@ -8,7 +8,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/75 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-[var(--page-max-width)] items-center justify-between px-[var(--page-padding)]">
-        <Link href="/" className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.38em] text-muted-foreground">
+        <Link href="/" className="flex items-center gap-3 text-sm font-semibold text-muted-foreground">
           <span className="relative flex size-2 items-center justify-center">
             <span className="absolute inline-flex size-3 rounded-full bg-primary/30" />
             <span className="relative inline-flex size-1.5 rounded-full bg-primary shadow-[0_0_0_4px_rgba(251,65,31,0.18)]" />

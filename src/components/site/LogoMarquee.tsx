@@ -17,7 +17,7 @@ export function LogoMarquee() {
     <section className="relative overflow-hidden border-y border-border/60 bg-white/50 py-12 backdrop-blur">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(51,147,255,0.12),_transparent_65%)]" />
       <div className="relative mx-auto max-w-[var(--page-max-width)] space-y-6 px-[var(--page-padding)]">
-        <div className="flex items-center justify-between gap-6 text-xs uppercase tracking-[0.36em] text-muted-foreground/80">
+        <div className="flex items-center justify-between gap-6 text-sm text-muted-foreground/80">
           <span>Доверяют командам и экспертам по всему миру</span>
           <span>15+ отраслей</span>
         </div>
@@ -33,7 +33,7 @@ export function LogoMarquee() {
                   <span className="text-lg font-semibold text-foreground transition group-hover:text-primary">
                     {item.title}
                   </span>
-                  <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground/60">
+                  <span className="text-xs text-muted-foreground/60">
                     {item.caption}
                   </span>
                 </div>
@@ -43,7 +43,7 @@ export function LogoMarquee() {
                   <span className="text-lg font-semibold text-foreground transition group-hover:text-primary">
                     {item.title}
                   </span>
-                  <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground/60">
+                  <span className="text-xs text-muted-foreground/60">
                     {item.caption}
                   </span>
                 </div>

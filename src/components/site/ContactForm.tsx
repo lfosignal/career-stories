@@ -54,7 +54,7 @@ export function ContactForm() {
     <section className="relative py-28" id="contact">
       <div className="mx-auto grid max-w-[var(--page-max-width)] gap-12 px-[var(--page-padding)] lg:grid-cols-[1.05fr_0.95fr]">
         <div className="space-y-6">
-          <span className="text-[11px] uppercase tracking-[0.42em] text-muted-foreground/80">Контакт</span>
+          <span className="text-sm text-muted-foreground/80">Контакт</span>
           <h2 className="text-4xl font-semibold text-foreground md:text-5xl">
             Оставьте заявку или назначьте встречу
           </h2>
@@ -62,7 +62,7 @@ export function ContactForm() {
             Опишите запрос или сразу забронируйте время. На вводной встрече оценим ситуацию, поставим цель и подберём формат работы.
           </p>
           <div className="rounded-[2rem] border border-border/60 bg-white/70 p-6 backdrop-blur shadow-[0_28px_70px_rgba(51,147,255,0.16)]">
-            <div className="text-[11px] uppercase tracking-[0.32em] text-muted-foreground/70">
+            <div className="text-sm text-muted-foreground/70">
               Быстрые способы связи
             </div>
             <div className="mt-4 grid gap-3 text-sm sm:grid-cols-2">

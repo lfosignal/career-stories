@@ -31,7 +31,7 @@ export function ProblemSolution() {
       <div className="relative mx-auto max-w-[var(--page-max-width)] px-[var(--page-padding)]">
         <div className="mb-12 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-3xl space-y-4">
-            <p className="text-[11px] uppercase tracking-[0.42em] text-muted-foreground/80">Новый творческий процесс карьеры</p>
+            <p className="text-sm text-muted-foreground/80">Новый творческий процесс карьеры</p>
             <h2 className="text-balance text-3xl font-semibold leading-tight text-foreground md:text-4xl">
               Генерируйте идеи, оттачивайте стратегию, выходите на старт за недели, а не месяцы
             </h2>
@@ -49,7 +49,7 @@ export function ProblemSolution() {
               <div className="absolute -top-16 right-0 hidden h-32 w-32 rounded-full bg-primary/18 blur-3xl md:block" />
               <div className="absolute -bottom-16 left-6 hidden h-36 w-36 rounded-full bg-accent/22 blur-3xl md:block" />
               <div className="relative flex flex-col gap-6">
-                <span className="w-max rounded-full border border-border/50 bg-white/70 px-4 py-1 text-[11px] uppercase tracking-[0.42em] text-muted-foreground/70">
+                <span className="w-max rounded-full border border-border/50 bg-white/70 px-4 py-1 text-[12px] text-muted-foreground/70">
                   {module.tag}
                 </span>
                 <div className="space-y-3">
@@ -64,7 +64,7 @@ export function ProblemSolution() {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-auto flex items-center gap-2 text-[11px] uppercase tracking-[0.42em] text-muted-foreground/70">
+                <div className="mt-auto flex items-center gap-2 text-sm text-muted-foreground/70">
                   <span>0{index + 1}</span>
                   <span>Модуль программы</span>
                 </div>

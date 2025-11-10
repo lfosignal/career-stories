@@ -7,7 +7,7 @@ export function FAQ() {
     <section className="py-24" id="faq">
       <div className="mx-auto max-w-[var(--page-max-width)] px-[var(--page-padding)]">
         <div className="mb-8 space-y-3">
-          <span className="text-[11px] uppercase tracking-[0.42em] text-muted-foreground/80">Часто спрашивают</span>
+          <span className="text-sm text-muted-foreground/80">Часто спрашивают</span>
           <h2 className="text-3xl font-semibold text-foreground md:text-4xl">Частые вопросы</h2>
           <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground">
             Ответы на ключевые вопросы о форматах работы, сроках и результате. Если не нашли нужного — свяжитесь, обсудим ваш случай.

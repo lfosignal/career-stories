@@ -19,7 +19,7 @@ export function Hero({ onPrimaryCtaClick }: HeroProps) {
       <div className="relative mx-auto max-w-[var(--page-max-width)] px-[var(--page-padding)]">
         <div className="grid items-center gap-16 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="space-y-10">
-            <div className="inline-flex items-center gap-3 rounded-full border border-border/60 bg-white/70 px-5 py-1.5 text-[11px] font-medium uppercase tracking-[0.42em] text-muted-foreground backdrop-blur">
+            <div className="inline-flex items-center gap-3 rounded-full border border-border/60 bg-white/70 px-5 py-1.5 text-[12px] font-medium text-muted-foreground backdrop-blur">
               <span className="inline-flex size-2 rounded-full bg-primary shadow-[0_0_0_6px_rgba(251,65,31,0.2)]" />
               {siteContent.brand.tagline}
             </div>
@@ -61,7 +61,7 @@ export function Hero({ onPrimaryCtaClick }: HeroProps) {
           </div>
           <div className="relative">
             <div className="relative overflow-hidden rounded-[2.5rem] border border-border/60 bg-gradient-card p-10 shadow-[0_40px_110px_rgba(62,109,176,0.18)] backdrop-blur-xl">
-              <div className="absolute -top-9 right-10 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/15 px-5 py-1 text-[11px] font-medium uppercase tracking-[0.38em] text-primary shadow-[0_22px_60px_rgba(251,65,31,0.25)]">
+              <div className="absolute -top-9 right-10 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/15 px-5 py-1 text-[12px] font-medium text-primary shadow-[0_22px_60px_rgba(251,65,31,0.25)]">
                 <span className="inline-flex size-1.5 rounded-full bg-primary shadow-[0_0_0_6px_rgba(251,65,31,0.25)]" />
                 15+ лет экспертизы
               </div>
@@ -72,14 +72,14 @@ export function Hero({ onPrimaryCtaClick }: HeroProps) {
                 </p>
                 <div className="grid gap-4 text-sm text-muted-foreground">
                   <div className="rounded-2xl border border-border/50 bg-white/65 p-5 backdrop-blur">
-                    <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.42em] text-muted-foreground/70">
+                    <div className="flex items-center justify-between text-[12px] text-muted-foreground/70">
                       <span>До программы</span>
                       <span>90 дней</span>
                     </div>
                     <p className="mt-3 text-base font-medium text-foreground">Неопределённость и выгорание</p>
                   </div>
                   <div className="rounded-2xl border border-primary/40 bg-primary/12 p-5 backdrop-blur">
-                    <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.42em] text-primary">
+                    <div className="flex items-center justify-between text-[12px] text-primary">
                       <span>После</span>
                       <span>4–8 недель</span>
                     </div>
