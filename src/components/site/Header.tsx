@@ -2,13 +2,14 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
+import { siteContent } from "@/content/site"
 
 export function Header() {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur">
       <div className="container mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
         <Link href="/" className="font-semibold">
-          Career Stories
+          {siteContent.brand.name}
         </Link>
         <nav className="hidden items-center gap-5 text-sm md:flex">
           <a href="#problems" className="text-muted-foreground hover:text-foreground">
