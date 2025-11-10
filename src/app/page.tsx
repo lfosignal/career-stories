@@ -7,6 +7,8 @@ import { About } from "@/components/site/About"
 import { Benefits } from "@/components/site/Benefits"
 import { Testimonials } from "@/components/site/Testimonials"
 import { CTASection } from "@/components/site/CTASection"
+import { ServicesOverview } from "@/components/site/ServicesOverview"
+import { Cases } from "@/components/site/Cases"
 
 export default function Home() {
   return (
@@ -15,7 +17,9 @@ export default function Home() {
       <About />
       <ProblemSolution />
       <Benefits />
+      <ServicesOverview />
       <ServicesPricing />
+      <Cases />
       <Testimonials />
       <FAQ />
       <CTASection />

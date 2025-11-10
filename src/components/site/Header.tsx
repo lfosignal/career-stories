@@ -12,11 +12,17 @@ export function Header() {
           {siteContent.brand.name}
         </Link>
         <nav className="hidden items-center gap-5 text-sm md:flex">
+          <a href="#about" className="text-muted-foreground hover:text-foreground">
+            Обо мне
+          </a>
           <a href="#problems" className="text-muted-foreground hover:text-foreground">
             Проблемы
           </a>
           <a href="#services" className="text-muted-foreground hover:text-foreground">
             Услуги
+          </a>
+          <a href="#testimonials" className="text-muted-foreground hover:text-foreground">
+            Отзывы
           </a>
           <a href="#faq" className="text-muted-foreground hover:text-foreground">
             FAQ
@@ -34,8 +40,10 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-72">
               <div className="mt-10 grid gap-4 text-sm">
+                <a href="#about">Обо мне</a>
                 <a href="#problems">Проблемы</a>
                 <a href="#services">Услуги</a>
+                <a href="#testimonials">Отзывы</a>
                 <a href="#faq">FAQ</a>
                 <a href="#contact">Контакты</a>
               </div>
