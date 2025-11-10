@@ -8,10 +8,10 @@ export function About() {
       <div className="grid items-center gap-8 md:grid-cols-2">
         <div className="relative h-64 w-full md:h-80">
           <Image
-            src="/globe.svg"
+            src="/consultant.jpg"
             alt="Портрет консультанта"
             fill
-            className="object-contain dark:invert"
+            className="rounded-lg object-cover"
             priority
           />
         </div>
