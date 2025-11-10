@@ -11,14 +11,11 @@ export function Hero({ onPrimaryCtaClick }: HeroProps) {
 
   return (
     <section className="relative overflow-hidden pb-20 pt-28">
-      <div className="absolute inset-0 -z-20 bg-gradient-to-r from-white via-[#DCEFFF] to-[#BBD9FF]" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-white/70 via-white/55 to-transparent" />
-      <div className="absolute inset-x-1/4 top-0 -z-10 h-72 rounded-b-[45%] bg-white/40 blur-3xl" />
+      <div className="absolute inset-0 -z-30 bg-[#DCEFFF]" />
+      <div className="absolute inset-0 -z-20 bg-gradient-to-r from-white via-[#E7F3FF] to-[#BBD9FF]" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-white/70 via-white/50 to-transparent" />
+      <div className="absolute inset-x-[15%] top-0 -z-10 h-64 rounded-b-[35%] bg-white/55 blur-3xl" />
       <div className="mx-auto flex max-w-4xl flex-col items-center gap-10 px-[var(--page-padding)] text-center">
-        <div className="inline-flex items-center gap-3 rounded-full border border-border/60 bg-white/70 px-6 py-3 text-base font-semibold text-[#343434]">
-          <span className="inline-flex size-2 rounded-full bg-[#FB411F] shadow-[0_0_0_6px_rgba(251,65,31,0.18)]" />
-          Карьера Про
-        </div>
         <div className="space-y-6">
           <h1 className="text-balance text-4xl font-semibold leading-[1.35] text-foreground md:text-[44px] md:leading-[56px]">
             {titleMain.trim()}
