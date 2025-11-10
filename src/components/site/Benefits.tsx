@@ -7,7 +7,7 @@ export function Benefits() {
       <h2 className="mb-8 text-2xl font-semibold tracking-tight">Почему со мной</h2>
       <div className="grid gap-6 md:grid-cols-4">
         {siteContent.benefits.map((it) => (
-          <Card key={it.label}>
+          <Card key={it.label} className="bg-white/60 backdrop-blur dark:bg-zinc-900/40">
             <CardContent className="p-6 text-center">
               <div className="text-3xl font-semibold">{it.kpi}</div>
               <p className="mt-2 text-sm text-muted-foreground">{it.label}</p>

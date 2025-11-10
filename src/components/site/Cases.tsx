@@ -7,7 +7,7 @@ export function Cases() {
       <h2 className="mb-8 text-2xl font-semibold tracking-tight">Истории успеха</h2>
       <div className="grid gap-6 md:grid-cols-3">
         {siteContent.cases.map((c) => (
-          <Card key={c.title}>
+          <Card key={c.title} className="bg-white/60 backdrop-blur dark:bg-zinc-900/40">
             <CardHeader>
               <CardTitle>{c.title}</CardTitle>
             </CardHeader>

@@ -9,21 +9,43 @@ import { Testimonials } from "@/components/site/Testimonials"
 import { CTASection } from "@/components/site/CTASection"
 import { ServicesOverview } from "@/components/site/ServicesOverview"
 import { Cases } from "@/components/site/Cases"
+import { SectionDivider } from "@/components/site/SectionDivider"
+import { siteContent } from "@/content/site"
 
 export default function Home() {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": siteContent.faq.map((q) => ({
+      "@type": "Question",
+      "name": q.q,
+      "acceptedAnswer": { "@type": "Answer", "text": q.a },
+    })),
+  }
   return (
     <div className="min-h-screen bg-background">
       <Hero />
       <About />
+      <SectionDivider />
       <ProblemSolution />
+      <SectionDivider />
       <Benefits />
       <ServicesOverview />
+      <SectionDivider />
       <ServicesPricing />
+      <SectionDivider />
       <Cases />
+      <SectionDivider />
       <Testimonials />
+      <SectionDivider />
       <FAQ />
       <CTASection />
       <ContactForm />
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
     </div>
   )
 }

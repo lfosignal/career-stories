@@ -9,7 +9,7 @@ export function ServicesOverview() {
       <p className="mt-2 max-w-3xl text-muted-foreground">{s.subtitle}</p>
       <div className="mt-8 grid gap-6 md:grid-cols-2">
         {s.items.map((item) => (
-          <div key={item.title} className="rounded-lg border p-6">
+          <div key={item.title} className="rounded-lg border bg-white/60 p-6 backdrop-blur dark:bg-zinc-900/40">
             <h3 className="font-medium">{item.title}</h3>
             <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
               {item.bullets.map((b) => (

@@ -79,11 +79,21 @@ export function ContactForm() {
       <div className="mt-8 grid gap-3 rounded-lg border p-4 text-sm">
         <div className="text-muted-foreground">Быстрые способы связи:</div>
         <div className="flex flex-wrap gap-3">
+          <span className="inline-flex items-center rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 p-[1px]">
+            <Button asChild className="rounded-full">
+              <a href="https://cal.com" target="_blank" rel="noreferrer">Запись в календаре</a>
+            </Button>
+          </span>
+          <span className="inline-flex items-center rounded-full bg-gradient-to-r from-sky-500 to-blue-600 p-[1px]">
+            <Button asChild className="rounded-full">
+              <a href="https://t.me/your_telegram_username" target="_blank" rel="noreferrer">Telegram</a>
+            </Button>
+          </span>
           <Button variant="outline" asChild>
-            <a href="https://cal.com" target="_blank" rel="noreferrer">Запись в календаре</a>
+            <a href="https://wa.me/79501234567" target="_blank" rel="noreferrer">WhatsApp</a>
           </Button>
           <Button variant="outline" asChild>
-            <a href="https://t.me" target="_blank" rel="noreferrer">Написать в Telegram</a>
+            <a href="https://instagram.com/your_instagram_username" target="_blank" rel="noreferrer">Instagram</a>
           </Button>
         </div>
       </div>

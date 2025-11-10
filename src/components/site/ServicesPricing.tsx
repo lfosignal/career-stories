@@ -51,7 +51,7 @@ export function ServicesPricing() {
             <CardContent className="space-y-2">
               {plan.features.map((f) => (
                 <div key={f} className="flex items-start gap-2">
-                  <Check className="mt-0.5 size-4 text-green-600" />
+                  <Check className="mt-0.5 size-4 text-primary" />
                   <p>{f}</p>
                 </div>
               ))}

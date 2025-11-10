@@ -4,6 +4,7 @@ import useEmblaCarousel from "embla-carousel-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { siteContent } from "@/content/site"
 import { Star } from "lucide-react"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const testimonials = [
   ...siteContent.testimonials,
@@ -30,7 +31,13 @@ export function Testimonials() {
                     <Star className="size-4 fill-current" />
                   </div>
                   <p className="text-sm text-muted-foreground">{t.text}</p>
-                  <p className="text-sm">— {t.name}</p>
+                  <div className="flex items-center gap-3">
+                    <Avatar className="size-8">
+                      <AvatarImage src={t.avatar} />
+                      <AvatarFallback>★</AvatarFallback>
+                    </Avatar>
+                    <p className="text-sm">— {t.name}</p>
+                  </div>
                 </CardContent>
               </Card>
             </div>

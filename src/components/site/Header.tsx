@@ -50,9 +50,11 @@ export function Header() {
             </SheetContent>
           </Sheet>
         </div>
-        <Button asChild size="sm" className="ml-4 hidden md:inline-flex">
-          <a href="#contact">Записаться</a>
-        </Button>
+        <span className="ml-4 hidden rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 p-[1px] md:inline-flex">
+          <Button asChild size="sm" className="rounded-full">
+            <a href="#contact">Бесплатная консультация</a>
+          </Button>
+        </span>
       </div>
     </header>
   )
