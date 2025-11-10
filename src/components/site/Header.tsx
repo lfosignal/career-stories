@@ -54,11 +54,6 @@ export function Header() {
             </SheetContent>
           </Sheet>
         </div>
-        <span className="hidden md:inline-flex">
-          <Button size="sm" className="bg-white/30 text-[#343434]">
-            Связаться
-          </Button>
-        </span>
       </div>
     </header>
   )
