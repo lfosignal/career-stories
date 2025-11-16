@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Project Context (2025-11)
+
+- Переработан hero-блок: минималистичный центрированный контент, градиент `#EFF5FF → #B7D3FF` с мягким радиальным подсветом и обновлёнными CTA-кнопками.
+- Навигация в шапке переведена в стеклянный «пилл», закреплена при скролле и очищена от лишних CTA.
+- Акцентные кнопки используют моноцвет `#FB411F`, вторичные — `#F5F5F5`; паддинги унифицированы до `32×20` px.
+- Уточнены цветовые токены и секции (интервалы, карточные радиусы/тени, testimonials) по мотивам exactly.ai.
+
 ## Getting Started
 
 First, run the development server:
